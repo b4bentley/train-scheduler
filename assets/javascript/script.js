@@ -57,7 +57,7 @@ database.ref().on('child_added', function(snapshot,value){
 
     //difference between initial and current
     var difference = moment().diff(moment(startTime), "minutes");
-    console.log("difference in initial time and current time: " + diffTime);
+    console.log("difference in initial time and current time: " + difference);
 
     //modular math to figure out time 
     var remainder = difference % frequency;
